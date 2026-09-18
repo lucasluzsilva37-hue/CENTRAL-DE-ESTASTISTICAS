@@ -11,9 +11,9 @@ URL_API = "https://sportapi7.p.rapidapi.com/api/v1/sport/football/events/live"
 @st.cache_data(ttl=300)
 def fetch_live_data():
     try:
-        resposta = requests.get(URL_API, headers={"x-rapidapi-key": API_KEY, "x-rapidapi-host": "sportapi7.p.rapidapi.com"})
-        if response.status_code == 200:
-            return response.json()
+       resposta = requests.get(URL_da_API, headers={"x-rapidapi-key": API_KEY, "x-rapidapi-host": "sportapi7.p.rapidapi.com"})
+        if resposta.status_code == 200:
+            return resposta.json()
         else:
             return None
     except Exception as e:
