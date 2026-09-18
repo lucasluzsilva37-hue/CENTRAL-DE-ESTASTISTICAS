@@ -6,12 +6,12 @@ st.set_page_config(page_title="Football Stats & Probabilities", layout="wide")
 st.title("⚽ Football Match Stats & Probabilities")
 
 API_KEY = "7e94815863msh0e01b870a071291p148c51jsn131ab4402ec7"
-URL_da_API = "https://sportapi7.p.rapidapi.com/api/v1/sport/football/events/live"
+URL_API = "https://sportapi7.p.rapidapi.com/api/v1/sport/football/events/live"
 
 @st.cache_data(ttl=300)
 def fetch_live_data():
     try:
-        resposta = requests.get(URL_da_API, headers={"x-rapidapi-key": API_KEY, "x-rapidapi-host": "sportapi7.p.rapidapi.com"})
+        resposta = requests.get(URL_API, headers={"x-rapidapi-key": API_KEY, "x-rapidapi-host": "sportapi7.p.rapidapi.com"})
         if response.status_code == 200:
             return response.json()
         else:
