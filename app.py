@@ -5,8 +5,8 @@ import requests
 st.set_page_config(page_title="Football Stats & Probabilities", layout="wide")
 st.title("⚽ Football Match Stats & Probabilities")
 
-API_KEY = "7e94815863msh0e01b870a071291p148c51jsn131ab4402ec7I"
-API_URL = "https://keys-api.p.rapidapi.com/112.197.71.113"
+API_KEY = "7e94815863msh0e01b870a071291p148c51jsn131ab4402ec7"
+API_URL = "https://sportapi7.p.rapidapi.com/api/v1/event/%7Bid%7D/shotmap/%7BteamId%7D"
 
 @st.cache_data(ttl=300)
 def fetch_live_data():
