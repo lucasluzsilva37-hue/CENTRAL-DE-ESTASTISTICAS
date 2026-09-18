@@ -5,7 +5,7 @@ import requests
 st.set_page_config(page_title="Football Stats & Probabilities", layout="wide")
 st.title("⚽ Football Match Stats & Probabilities")
 
-API_KEY = "SUA_API_KEY_AQUI"
+API_KEY = "7e94815863msh0e01b870a071291p148c51jsn131ab4402ec7I"
 API_URL = "https://api.example.com/matches"
 
 @st.cache_data(ttl=300)
