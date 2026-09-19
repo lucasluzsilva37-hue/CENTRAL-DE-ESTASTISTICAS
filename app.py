@@ -33,4 +33,4 @@ try:
  df = pd.DataFrame(dados)
  st.dataframe(df)
  else:
- st.warning("No live data available. Please check the API connection.") 
+ st.warning("No live data available. Please check the API connection.")
