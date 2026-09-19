@@ -25,7 +25,7 @@ def fetch_live_data():
      Exception as e:
         st.error(f"Error fetching data: {e}")
         return None
- except Exception as e:
+Exception as e:
  st.error(f"Error fetching data: {e}")
  return None
 
