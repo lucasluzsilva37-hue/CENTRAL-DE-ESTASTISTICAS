@@ -26,7 +26,7 @@ def fetch_live_data():
  st.error(f"Error fetching data: {e}")
  return None
 
- try:
+try:
  dados = fetch_live_data()
  print(dados) # Adicionado para ver os dados no console
  if dados:
