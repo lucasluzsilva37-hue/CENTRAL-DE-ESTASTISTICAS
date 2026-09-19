@@ -26,10 +26,8 @@ try:
     data = fetch_live_data()
     if data:
         df = pd.DataFrame(data)
-        
         st.dataframe(df)
     else:
         st.warning("No live data available. Please check the API connection.")
 except Exception as e:
-    
     st.info("App initialized. Connect a sports API or load match data to begin.")
