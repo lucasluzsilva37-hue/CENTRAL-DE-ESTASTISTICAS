@@ -10,16 +10,16 @@ URL_DA_API = "https://sportap17.p.rapidapi.com/v1/sport/football/events/live"
 
 @st.cache_data(ttl=300)
 def fetch_live_data():
-     try:
-       resposta = requests.get(
+ try:
+ resposta = requests.get(
  URL_DA_API,
  headers={
  "X-RapidAPI-Key": API_KEY,
  "X-RapidAPI-Host": "sportap17.p.rapidapi.com",
  },
  )
-     if resposta.status_code == 200:
-       return resposta.json()
+ if resposta.status_code == 200:
+ return resposta.json()
  else:
  return None
  except Exception as e:
@@ -34,3 +34,5 @@ try:
  st.dataframe(df)
  else:
  st.warning("No live data available. Please check the API connection.")
+except Exception as e:
+ st.info("App initialized. Connect a sports API or load match data to begin.")
