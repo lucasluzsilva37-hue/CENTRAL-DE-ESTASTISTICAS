@@ -22,7 +22,7 @@ def fetch_live_data():
         return resposta.json()
     else:
         return None
-       except Exception as e:
+   except Exception as e:
     st.error(f"Error fetching data: {e}")
     return None
 
