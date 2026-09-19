@@ -19,7 +19,7 @@ def fetch_live_data():
  },
  )
      if resposta.status_code == 200:
- return resposta.json()
+       return resposta.json()
  else:
  return None
  except Exception as e:
