@@ -2,8 +2,8 @@ import streamlit as st
 import pandas as pd
 import requests
 
- st.set_page_config(page_title="Football Stats & Probabilities", layout="wide")
- st.title("⚽ Football Match Stats & Probabilities")
+st.set_page_config(page_title="Football Stats & Probabilities", layout="wide")
+st.title("⚽ Football Match Stats & Probabilities")
 
 API_KEY = "7e94815863msh0e01b870a071291p148c51jsn131ab4402ec7"
 URL_da_API = "https://sportapi7.p.rapidapi.com/api/v1/sport/football/events/live"
