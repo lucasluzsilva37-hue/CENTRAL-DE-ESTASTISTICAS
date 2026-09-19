@@ -6,7 +6,7 @@ st.set_page_config(page_title="Football Stats & Probabilities", layout="wide")
 st.title("⚽ Estatísticas e Probabilidades de Partidas de Futebol")
 
 API_KEY = "7e94815863mshe0b18b870a071291p148c51jsn131ab4402ec7"
-URL_DA_API = "https://sportap17.p.rapidapi.com/v1/sport/football/events/live"
+URL_DA_API = "https://sportapi7.p.rapidapi.com/api/v1/sport/football/odds/1/2024-03-05"
 
 @st.cache_data(ttl=300)
 def fetch_live_data():
