@@ -18,7 +18,7 @@ def fetch_live_data():
  "X-RapidAPI-Host": "sportap17.p.rapidapi.com",
  },
  )
- if resposta.status_code == 200:
+      if resposta.status_code == 200:
  return resposta.json()
  else:
  return None
