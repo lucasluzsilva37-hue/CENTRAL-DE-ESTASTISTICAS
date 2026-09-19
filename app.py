@@ -38,4 +38,4 @@ try:
         )
 except Exception as e:
     st.error(f"Error: {e}")
- st.info("App initialized. Connect a sports API or load match data to begin.")
+st.info("App initialized. Connect a sports API or load match data to begin.")
