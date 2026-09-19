@@ -10,8 +10,8 @@ URL_DA_API = "https://sportap17.p.rapidapi.com/v1/sport/football/events/live"
 
 @st.cache_data(ttl=300)
 def fetch_live_data():
- try:
- resposta = requests.get(
+     try:
+       resposta = requests.get(
  URL_DA_API,
  headers={
  "X-RapidAPI-Key": API_KEY,
